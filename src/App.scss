@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+
+  .project-card-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .project-card {
+      display: flex;
+      justify-content: center;
+      width: 600px;
+    }
+  }
+}
+.scrollhost-container {
+  position: relative;
+}
+
+.scroll-bar {
+  width: 10px;
+  height: 100%;
+  right: 0;
+  top: 0px;
+  position: absolute;
+  border-radius: 7px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.scrollhost {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.scrollhost::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-thumb {
+  width: 8px;
+  height: 20px;
+  margin-left: 1px;
+  position: absolute;
+  border-radius: 7px;
+  opacity: 1;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+}

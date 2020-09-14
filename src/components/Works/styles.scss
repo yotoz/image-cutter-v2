@@ -1,0 +1,52 @@
+.worksheet {
+	background-image: url(../../resources/bg/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+
+	.worksheet-top-space {
+		height: 10px;
+	}
+}
+
+.project-card-frame {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	// Large devices (desktops, less than 1200px)
+	@media (max-width: 1599.98px) {
+		& {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	// Large devices (desktops, less than 1200px)
+	@media (max-width: 1199.98px) {
+		& {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	// Medium devices (tablets, less than 992px)
+	@media (max-width: 991.98px) {
+		& {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	// Small devices (landscape phones, less than 768px)
+	@media (max-width: 767.98px) {
+		& {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+	// Extra small devices (portrait phones, less than 576px)
+	@media (max-width: 575.98px) {
+		& {
+			grid-template-columns: repeat(1, 1fr);
+		}
+	}
+
+	.project-card {
+		display: flex;
+		justify-content: center;
+	}
+}

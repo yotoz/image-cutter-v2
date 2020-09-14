@@ -1,0 +1,52 @@
+palette {
+  primary: {
+    main: '#ffffff';
+  }
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  height: 100vh;
+
+  background-image: url(../../resources/bg/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+
+  .logo {
+    .logo-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-family: 'Noto Sans', sans-serif;
+
+      // font-size: 10vh;
+      font-size: 12vw;
+
+      white-space: nowrap;
+    }
+  }
+
+  .login-space {
+    width: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .login-button-font {
+    // font-weight: bold;
+    padding-left: 10px;
+  }
+
+  .login-tail {
+    text-align: center;
+  }
+}

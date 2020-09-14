@@ -1,0 +1,52 @@
+._cutter {
+	.cutting-image {
+		max-width: 100%;
+	}
+
+	.palette {
+		position: fixed;
+		right: 20px;
+		top: 20px;
+		box-sizing: border-box;
+		padding: 10px;
+
+		width: 100px;
+		height: 220px;
+
+		border: 1px solid black;
+		border-radius: 12px;
+
+		.palette-rgb {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.target-color {
+			width: 25px;
+			height: 25px;
+		}
+	}
+
+	.minimap {
+		position: fixed;
+		right: 20px;
+		top: 260px;
+		box-sizing: border-box;
+
+		width: 200px;
+		height: 200px;
+
+		border: 1px solid black;
+		border-radius: 10px;
+
+		float: left;
+		overflow: hidden;
+
+		.minimap-image {
+			background-color: #f7f7f7;
+			text-align: center;
+			transform-origin: top left;
+			transform: scale(2);
+		}
+	}
+}
